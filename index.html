@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="dist/output.css?v=3">
 </head>
 <body class="min-h-screen overflow-x-hidden">
     
@@ -66,7 +66,7 @@
             
             <div class="text-center max-w-5xl mx-auto fade-in relative z-10">
                 <div class="mb-6">
-                    <span class="badge badge-primary badge-lg gap-2 px-4 py-3">
+                    <span class="badge badge-primary badge-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
@@ -248,184 +248,119 @@
             </div>
         </section>
         
-        <!-- Packages Section -->
-        <section id="packages" class="py-20 px-4">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16 fade-in">
-                    <span class="badge badge-outline badge-primary mb-4">الباقات</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">اختر الباقة المناسبة لك</h2>
-                    <p class="text-base-content/60 text-lg">حلول مخصصة للمحامين والشركات القانونية</p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
-                    <!-- Package 1 -->
-                    <div class="pricing-card card glass border border-base-300 fade-in">
-                        <div class="card-body">
-                            <div class="badge badge-ghost mb-2">للمبتدئين</div>
-                            <h3 class="card-title text-2xl">بناء السمعة</h3>
-                            <p class="text-base-content/60 text-sm mb-4">حضور احترافي خلال 30 يوم</p>
-                            
-                            <div class="my-4">
-                                <span class="text-4xl font-bold gradient-text">1,350</span>
-                                <span class="text-base-content/60"> ريال/شهرياً</span>
-                            </div>
-                            
-                            <ul class="space-y-3 mb-6 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    8 منشورات شهرية احترافية
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    4 فيديوهات قصيرة شهرياً
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    4 ريلز + 4 ثريدات
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    8 تغريدات + 2 مقالات
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    نصائح أسبوعية لرفع التفاعل
-                                </li>
-                            </ul>
-                            
-                            <a href="https://wa.me/966506305212?text=أرغب في الاشتراك في باقة بناء السمعة" target="_blank" class="btn btn-outline btn-primary w-full">
-                                اطلب الباقة الآن
-                            </a>
-                        </div>
+<!-- Packages Section -->
+<section id="packages" class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+            <span class="badge badge-outline badge-primary mb-4">الباقات</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">اختر الباقة المناسبة لك</h2>
+            <p class="text-base-content/60 text-lg">حلول مخصصة للمحامين والشركات القانونية</p>
+        </div>
+        
+        <div class="flex flex-row gap-3 items-stretch">
+            <!-- Package 1 - 25% -->
+            <div class="pricing-card card glass border border-base-300 fade-in w-[25%] flex-shrink-0">
+                <div class="card-body p-3 md:p-4 text-center">
+                    <div class="badge badge-ghost badge-sm mb-1">للمبتدئين</div>
+                    <h3 class="card-title text-sm md:text-lg justify-center">بناء السمعة</h3>
+                    <p class="text-base-content/60 text-xs mb-2">حضور احترافي خلال 30 يوم</p>
+                    
+                    <div class="my-2">
+                        <span class="text-lg md:text-2xl font-bold gradient-text">1,350</span>
+                        <span class="text-base-content/60 text-xs"> ريال/شهرياً</span>
                     </div>
                     
-                    <!-- Package 2 - Featured -->
-                    <div class="pricing-card featured card glass border-2 border-primary glow fade-in">
-                        <div class="card-body">
-                            <div class="badge badge-primary mb-2">الأكثر طلباً</div>
-                            <h3 class="card-title text-2xl">النمو</h3>
-                            <p class="text-base-content/60 text-sm mb-4">محتوى متكامل لكل المنصات</p>
-                            
-                            <div class="my-4">
-                                <span class="text-4xl font-bold gradient-text">2,900</span>
-                                <span class="text-base-content/60"> ريال/شهرياً</span>
-                            </div>
-                            
-                            <ul class="space-y-3 mb-6 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    منشورات احترافية متكاملة
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    10 فيديوهات + 10 ريلز
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    10 ثريدات + 15 تغريدة
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    10 منشورات لينكدان + 4 مقالات
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    تقرير أداء شهري
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    استراتيجية هاشتاغات
-                                </li>
-                            </ul>
-                            
-                            <a href="https://wa.me/966506305212?text=أرغب في الاشتراك في باقة النمو" target="_blank" class="btn btn-primary w-full pulse-glow">
-                                اطلب الباقة الآن
-                            </a>
-                        </div>
-                    </div>
+                    <ul class="space-y-1 mb-3 text-xs text-right">
+                        <li>1 - 8 منشورات شهرية (تثقيفي + تحفيزي + مهني)</li>
+                        <li>2 - 4 فيديوهات قصيرة (سكريبت + مونتاج)</li>
+                        <li>3 - 4 مقاطع تيك توك</li>
+                        <li>4 - 4 منشورات انستقرام</li>
+                        <li>5 - 4 ريلز + 4 ثريدات اكس</li>
+                        <li>6 - 8 تغريدات اكس</li>
+                        <li>7 - 4 منشورات لينكدان</li>
+                        <li>8 - 2 مقالات</li>
+                        <li>9 - نصائح أسبوعية لرفع التفاعل</li>
+                    </ul>
                     
-                    <!-- Package 3 -->
-                    <div class="pricing-card card glass border border-base-300 fade-in">
-                        <div class="card-body">
-                            <div class="badge badge-secondary mb-2">للشركات</div>
-                            <h3 class="card-title text-2xl">بناء الصرح القانوني</h3>
-                            <p class="text-base-content/60 text-sm mb-4">إدارة كاملة لجميع المنصات</p>
-                            
-                            <div class="my-4">
-                                <span class="text-4xl font-bold gradient-text">5,000</span>
-                                <span class="text-base-content/60"> ريال/شهرياً</span>
-                            </div>
-                            
-                            <ul class="space-y-3 mb-6 text-sm">
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    محتوى B2B + B2C
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    25 فيديو + 25 ريلز
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    20 ثريد + 30 تغريدة
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    25 منشور لينكدان + 10 مقالات
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    تقارير وتحليلات شهرية
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                    </svg>
-                                    توصيات استراتيجية
-                                </li>
-                            </ul>
-                            
-                            <a href="https://wa.me/966506305212?text=أرغب في الاشتراك في باقة بناء الصرح القانوني" target="_blank" class="btn btn-outline btn-primary w-full">
-                                اطلب الباقة الآن
-                            </a>
-                        </div>
+                    <div class="mt-auto">
+                        <a href="https://wa.me/966506305212?text=أرغب في الاشتراك في باقة بناء السمعة" target="_blank" class="btn btn-outline btn-primary btn-sm w-full">
+                            اطلب الباقة
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        
+            
+            <!-- Package 2 - 27% -->
+            <div class="pricing-card card glass border border-base-300 fade-in w-[27%] flex-shrink-0">
+                <div class="card-body p-3 md:p-4 text-center">
+                    <div class="badge badge-secondary badge-sm mb-1">مميزه</div>
+                    <h3 class="card-title text-sm md:text-lg justify-center">النمو</h3>
+                    <p class="text-base-content/60 text-xs mb-2">محتوى شامل لكل المنصات</p>
+                    
+                    <div class="my-2">
+                        <span class="text-lg md:text-2xl font-bold gradient-text">2,900</span>
+                        <span class="text-base-content/60 text-xs"> ريال/شهرياً</span>
+                    </div>
+                    
+                    <ul class="space-y-1 mb-3 text-xs text-right">
+                        <li>1 - منشورات احترافية (تثقيفي + تسويقي + تفاعلي)</li>
+                        <li>2 - تصميم جرافيك متناسق مع هويتك</li>
+                        <li>3 - 10 فيديوهات قصيرة (سكريبت + مونتاج)</li>
+                        <li>4 - 10 مقاطع تيك توك</li>
+                        <li>5 - 10 منشورات انستقرام + 10 ريلز</li>
+                        <li>6 - 10 ثريدات + 15 تغريدات اكس</li>
+                        <li>7 - 10 منشورات لينكدان</li>
+                        <li>8 - 4 مقالات</li>
+                        <li>9 - استراتيجية هاشتاغات لكل منصة</li>
+                        <li>10 - تقرير أداء شهري مختصر</li>
+                    </ul>
+                    
+                    <div class="mt-auto">
+                        <a href="https://wa.me/966506305212?text=أرغب في الاشتراك في باقة النمو" target="_blank" class="btn btn-outline btn-primary btn-sm w-full">
+                            اطلب الباقة
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Package 3 - 48% Featured -->
+            <div class="pricing-card featured card glass border-2 border-primary glow fade-in flex-1">
+                <div class="card-body p-4 md:p-6 text-center">
+                    <div class="badge badge-primary mb-2">للشركات </div>
+                    <h3 class="card-title text-lg md:text-2xl justify-center">بناء الصرح القانوني</h3>
+                    <p class="text-base-content/60 text-sm mb-3">إدارة كاملة لجميع الصفحات والمنصات - ترسيخ شركتك كقائد في السوق</p>
+                    
+                    <div class="my-3">
+                        <span class="text-2xl md:text-4xl font-bold gradient-text">5,000</span>
+                        <span class="text-base-content/60 text-sm"> ريال/شهرياً</span>
+                    </div>
+                    
+                    <ul class="space-y-1 mb-4 text-xs md:text-sm text-right">
+                        <li>1 - محتوى B2B للشركات بلغة قانونية احترافية</li>
+                        <li>2 - محتوى B2C للأفراد بأسلوب بسيط وواضح</li>
+                        <li>3 - 25 مقطع تيك توك</li>
+                        <li>4 - 25 منشور انستقرام + 25 ريلز</li>
+                        <li>5 - 20 ثريد + 30 تغريدة اكس</li>
+                        <li>6 - 25 منشور لينكدان</li>
+                        <li>7 - 10 مقالات احترافية</li>
+                        <li>8 - فيديوهات احترافية 40-60 ثانية جاهزة للنشر</li>
+                        <li>9 - تقارير وتحليلات شهرية مع توصيات استراتيجية</li>
+                        <li>10 - اقتراح محتوى حملات تسويقية للوصول للأهداف</li>
+                        <li>11 - تعزيز ريادة الشركة ورفع قوتها التنافسية</li>
+                        <li>12 - بناء سلطة رقمية موثوقة</li>
+                        <li>13 - تحويل المحتوى إلى أرباح عبر زيادة العملاء</li>
+                    </ul>
+                    
+                    <div class="mt-auto">
+                        <a href="https://wa.me/966506305212?text=أرغب في الاشتراك في باقة بناء الصرح القانوني" target="_blank" class="btn btn-primary w-full pulse-glow">
+                            اطلب الباقة الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Guarantee Section -->
         <section id="guarantee" class="py-20 px-4 bg-base-200/50">
             <div class="max-w-4xl mx-auto text-center">
